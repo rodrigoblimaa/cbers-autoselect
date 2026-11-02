@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this QGIS plugin in your research, cite the software repository."
+title: "CBERS AutoSelect"
+type: software
+authors:
+  - family-names: Lima
+    given-names: Rodrigo Barbosa
+version: 0.1.0
+url: "https://github.com/rodrigoblimaa/cbers-autoselect"
+repository-code: "https://github.com/rodrigoblimaa/cbers-autoselect"
+license: GPL-2.0-only

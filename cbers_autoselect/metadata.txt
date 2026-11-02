@@ -1,0 +1,20 @@
+[general]
+name=CBERS AutoSelect
+qgisMinimumVersion=3.28
+version=0.1.0
+author=Rodrigo Barbosa Lima
+email=rodrigobl@unifei.edu.br
+
+description=Automatically selects the newest suitable CBERS-4A/WPM scene for a chosen area using spatial coverage and potential cloudiness thresholds.
+description[pt_BR]=Seleciona automaticamente a cena CBERS-4A/WPM adequada mais recente para uma área, considerando cobertura espacial e nebulosidade potencial.
+about=CBERS AutoSelect queries the INPE STAC catalog backwards in time to automatically select the most recent suitable CBERS-4A/WPM scene for a polygon area of interest. Users choose a minimum coverage percentage, a maximum potential cloudiness percentage, and an output product (2 m PCA-fused RGB or 8 m multispectral RGB). The experimental cloud screening uses raw WPM Level-4 B, G, R and NIR values; bright surfaces may cause false positives. A network connection and QGIS's bundled Python, NumPy and GDAL libraries are required. Processing is limited to 40 million pixels per internal grid. The interface supports English and Brazilian Portuguese based on QGIS language settings. The selected product keeps its original STAC identifier in the QGIS Layers panel. This is an experimental research plugin, not an official INPE product.
+about[pt_BR]=O CBERS AutoSelect consulta retrospectivamente o catálogo STAC do INPE para identificar a cena CBERS-4A/WPM mais recente que atenda aos critérios de cobertura espacial e nebulosidade potencial definidos para uma área poligonal do QGIS. O usuário pode carregar RGB fusionada a 2 m ou RGB multiespectral a 8 m. A avaliação de nuvens é experimental e pode classificar superfícies claras como nuvens. Requer internet, GDAL e NumPy fornecidos pelo QGIS. O processamento interno possui limite de 40 milhões de pixels por grade. A interface alterna automaticamente entre inglês e português do Brasil conforme o idioma do QGIS. A camada mantém o ID original do item STAC. Este é um plugin de pesquisa experimental e não é um produto oficial do INPE.
+category=Raster
+tags=CBERS,CBERS-4A,STAC,remote sensing,satellite imagery,INPE,Brazil,scene selection
+homepage=https://github.com/rodrigoblimaa/cbers-autoselect
+repository=https://github.com/rodrigoblimaa/cbers-autoselect
+tracker=https://github.com/rodrigoblimaa/cbers-autoselect/issues
+icon=icon.png
+experimental=True
+deprecated=False
+changelog=0.1.0 - First experimental public version. Automatic CBERS-4A/WPM scene selection; AOI-specific coverage and potential cloudiness; output at 2 m or 8 m; English and Brazilian Portuguese user interface; QGIS background task and cancellation; STAC pagination and GPL-2.0 license.
